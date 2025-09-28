@@ -8,7 +8,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background-image: url('https://source.unsplash.com/1600x900/?sky,airplane');
+    background-image: url('/images/sunset.jpg');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -69,19 +69,61 @@ h1 {
 }
 
 /* About Me */
+#about {
+    padding: 60px 0;
+}
+
+#about .row {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #about img {
     max-width: 100%;
     border-radius: 10px;
+    object-fit: cover;
+    height: 350px;
+    width: 100%;
 }
 
-/* Services */
-#services .list-unstyled li {
-    font-size: 1.1rem;
-    padding: 0.5rem 0;
+#about .col-md-6 {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for text */
+    padding: 20px; /* Added padding for breathing room */
 }
 
-#services .list-unstyled strong {
-    font-weight: 700;
+#about p {
+    text-align: justify;
+    font-size: 1.2rem; /* Increased font size */
+    line-height: 1.8; /* Increased line height for readability */
+    color: #333; /* Darker text for contrast */
+    margin-bottom: 1rem;
+}
+
+#about a {
+    color: #0056b3; /* Slightly darker link color for visibility */
+    text-decoration: none;
+    font-weight: 500; /* Mild bold for links */
+}
+
+#about a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #about img {
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    #about .row {
+        flex-direction: column-reverse;
+    }
+
+    #about .col-md-6 {
+        padding: 15px; /* Slightly less padding on mobile */
+    }
 }
 
 /* Rates */
