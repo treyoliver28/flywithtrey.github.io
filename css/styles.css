@@ -1,0 +1,29 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero {
+    background-image: url('https://source.unsplash.com/1600x900/?sky'); /* Placeholder sky image */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Active Nav Link Highlight */
+.home .nav-link[href="index.html"],
+.about .nav-link[href="about.html"],
+.contact .nav-link[href="contact.html"] {
+    font-weight: bold;
+    color: #007bff !important;
+}
+
+/* Custom Colors */
+.bg-primary {
+    background-color: #007bff !important;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Add more custom styles as needed */
