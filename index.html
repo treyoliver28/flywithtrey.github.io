@@ -3,80 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fly With Trey: Certified Flight Instructor offering private and commercial pilot training. Build your flight hours with expert guidance.">
-    <title>Fly With Trey | Home</title>
+    <meta name="description" content="Fly With Trey: Certified Flight Instructor offering private and commercial pilot training in [Your Location]. Build your flight hours toward an airline career.">
+    <title>Fly With Trey | Certified Flight Instructor</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="home">
+<body>
     <!-- Header with Navigation -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header class="bg-light sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Fly With Trey</a>
+                <a class="navbar-brand" href="#home">Fly With Trey</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#rates">Rates</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#scheduling">Scheduling</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Hero Section -->
-        <section class="hero text-center py-5 bg-primary text-white">
-            <div class="container">
-                <h1>Fly With Trey Oliver</h1>
-                <p class="lead">Certified Flight Instructor (CFI) Helping You Soar to Private and Commercial Pilot Success</p>
-                <a href="contact.html" class="btn btn-light btn-lg">Book a Lesson</a>
-            </div>
-        </section>
+    <!-- Hero Section (Home) -->
+    <section id="home" class="hero text-center py-5 bg-primary text-white">
+        <div class="container">
+            <h1>Fly With Trey Oliver</h1>
+            <p class="lead">Certified Flight Instructor (CFI) | Building Skills and Hours for Private & Commercial Pilots</p>
+            <a href="#contact" class="btn btn-light btn-lg">Book a Lesson</a>
+        </div>
+    </section>
 
-        <!-- Intro Section -->
-        <section class="container my-5">
-            <div class="row">
-                <div class="col-md-8 mx-auto">
-                    <h2>Welcome to Your Aviation Journey</h2>
-                    <p>Hi, I'm Trey Oliver, a newly certified CFI with access to company planes for training. Whether you're starting as a private pilot or advancing to commercial, I'll help you build skills, confidence, and flight hours on your path to an airline career.</p>
-                </div>
+    <!-- About Me Section -->
+    <section id="about" class="container my-5">
+        <h1 class="text-center mb-4">About Me</h1>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="https://source.unsplash.com/400x400/?pilot" class="img-fluid rounded mb-3" alt="Trey Oliver, CFI headshot">
             </div>
-        </section>
+            <div class="col-md-8">
+                <p>I'm Trey Oliver, a newly certified CFI with a passion for aviation. I've landed a job that lets me use company planes to train private and commercial students, helping you gain the skills and hours needed for your airline dreams. Based at [Your Airport, e.g., Orlando Executive Airport (KORL)], I'm all about safe, fun, personalized instruction.</p>
+                <p>Whether you're starting your private pilot journey or advancing to commercial, I'll guide you every step. You can learn more about me by visiting my personal website <a href="https://yourpersonalwebsite.com">here</a>.</p>
+            </div>
+        </div>
+    </section>
 
-        <!-- Services Overview -->
-        <section class="bg-light py-5">
-            <div class="container">
-                <h2 class="text-center mb-4">What I Offer</h2>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="card mb-4">
-                            <img src="https://source.unsplash.com/600x400/?airplane" class="card-img-top" alt="Private pilot training aircraft">
-                            <div class="card-body">
-                                <h5 class="card-title">Private Pilot Training</h5>
-                                <p class="card-text">Ground school, flight lessons, and prep for your checkride. Flexible scheduling using company aircraft.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card mb-4">
-                            <img src="https://source.unsplash.com/600x400/?cockpit" class="card-img-top" alt="Commercial pilot training cockpit">
-                            <div class="card-body">
-                                <h5 class="card-title">Commercial Pilot Training</h5>
-                                <p class="card-text">Advanced maneuvers, cross-country flights, and hour-building toward your airline goals.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Services Section -->
+    <section id="services" class="bg-light py-5">
+        <div class="container">
+            <h1 class="text-center mb-4">Flight Instruction Services</h1>
+            <p class="lead text-center mb-4">As a dedicated CFI, I offer flexible, personalized training using company aircraft like Cessna 172s and more. I focus on real-world flying to prepare you for success—whether recreational or career-bound. With my own growing flight hours, I'm invested in your progress!</p>
+            <p class="text-center">I currently offer the following services:</p>
+            <ul class="list-unstyled">
+                <li class="mb-3"><strong>Private Pilot Certificate Training</strong> – Ground school, flight lessons, and checkride prep.</li>
+                <li class="mb-3"><strong>Commercial Pilot Certificate Training</strong> – Advanced maneuvers, cross-country, and hour-building.</li>
+                <li class="mb-3"><strong>Flight Reviews</strong> – Refresh and stay current.</li>
+                <li class="mb-3"><strong>Instrument Rating Training</strong> – Build IFR skills for all weather.</li>
+                <li class="mb-3"><strong>High Performance Endorsements</strong> – For complex aircraft.</li>
+            </ul>
+            <p class="text-center">Feel free to reach out to discuss your flight training goals. Note: I can also provide instruction in your own aircraft.</p>
+        </div>
+    </section>
+
+    <!-- Rates Section -->
+    <section id="rates" class="container my-5">
+        <h1 class="text-center mb-4">Rates</h1>
+        <p class="lead text-center mb-4">My standard rates are competitive and based on training at [Your Base Airport, e.g., KORL]. I offer instruction in company rentals or your own plane, with ground sessions via Zoom available.</p>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>Flight Instruction</strong> – $ [Your Rate]/hr</li>
+            <li class="list-group-item"><strong>Ground Instruction</strong> – $ [Your Rate]/hr</li>
+            <li class="list-group-item"><strong>Special Endorsements (e.g., High Performance)</strong> – $ [Your Rate]/hr + 0.3 hr admin fee</li>
+        </ul>
+        <p class="text-center mt-3">Additional mileage fees apply for airports beyond 50 miles. For Flight Reviews or endorsements, add 0.3 hours for paperwork.</p>
+    </section>
+
+    <!-- Scheduling Section -->
+    <section id="scheduling" class="bg-light py-5">
+        <div class="container">
+            <h1 class="text-center mb-4">Scheduling</h1>
+            <p class="lead text-center">As a full-time [your job, e.g., building hours toward airlines], I focus on evenings and weekends to fit busy schedules. New students: Contact me first to align on goals and availability.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container my-5">
+        <h1 class="text-center mb-4">Contact Me</h1>
+        <p class="lead text-center mb-4">Ready to get started? Reach out via phone, email, or the form below.</p>
+        <div class="row">
+            <div class="col-md-6">
+                <table class="table table-borderless">
+                    <tr><td><strong>Text/Call</strong></td><td>[Your Phone, e.g., 407-XXX-XXXX]</td></tr>
+                    <tr><td><strong>Email</strong></td><td><a href="mailto:your@email.com">your@email.com</a></td></tr>
+                </table>
             </div>
-        </section>
-    </main>
+            <div class="col-md-6">
+                <!-- Contact Form (Update action with your Formspree endpoint) -->
+                <form action="https://formspree.io/f/youridhere" method="POST">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message (e.g., Training Goals)</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-4">
@@ -92,5 +138,16 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>

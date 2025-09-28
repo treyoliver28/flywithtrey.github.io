@@ -1,19 +1,174 @@
+/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
 }
 
+/* Hero Section */
 .hero {
-    background-image: url('https://source.unsplash.com/1600x900/?sky'); /* Placeholder sky image */
+    background-image: url('https://source.unsplash.com/1600x900/?sky,airplane');
     background-size: cover;
     background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
 }
 
-/* Active Nav Link Highlight */
-.home .nav-link[href="index.html"],
-.about .nav-link[href="about.html"],
-.contact .nav-link[href="contact.html"] {
-    font-weight: bold;
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero .lead {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn-lg {
+    padding: 0.75rem 2rem;
+    font-size: 1.25rem;
+}
+
+/* Navigation */
+.navbar {
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    margin-left: 1rem;
+}
+
+.nav-link:hover {
     color: #007bff !important;
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.lead {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+/* About Me */
+#about img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Services */
+#services .list-unstyled li {
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+}
+
+#services .list-unstyled strong {
+    font-weight: 700;
+}
+
+/* Rates */
+#rates .list-group-item {
+    border: none;
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+#rates .list-group-item strong {
+    font-weight: 700;
+}
+
+/* Scheduling */
+#scheduling {
+    background-color: #f8f9fa;
+}
+
+/* Contact */
+#contact .table td {
+    border: none;
+    padding: 0.5rem 0;
+    vertical-align: top;
+}
+
+#contact .table td:first-child {
+    font-weight: 700;
+}
+
+#contact .form-label {
+    font-weight: 500;
+}
+
+#contact .btn-primary {
+    padding: 0.75rem 1.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+footer .list-inline-item {
+    margin: 0 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero .lead {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        margin-left: 0.5rem;
+    }
+
+    #about .row {
+        flex-direction: column-reverse;
+    }
+
+    #about img {
+        margin-bottom: 1rem;
+    }
 }
 
 /* Custom Colors */
@@ -26,4 +181,11 @@ body {
     border-color: #007bff;
 }
 
-/* Add more custom styles as needed */
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.text-primary {
+    color: #007bff !important;
+}
